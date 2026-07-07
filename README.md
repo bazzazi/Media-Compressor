@@ -109,4 +109,4 @@ python compressor.py --target-size 250KB
 
 ## License
 
-MIT
+All Rights are reserved for Mohammad Ali Bazzazi
