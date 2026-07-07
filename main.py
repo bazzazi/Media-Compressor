@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Media Compression Script (Images + PDFs)
-
+----------------------------------------
 - Reads files from the "input" folder (any number, any format).
 - Reduces file size as much as possible without noticeable quality loss
   and brings it below the size limit you specify.
@@ -18,6 +18,9 @@ Prerequisites (automatically checked):
     Ghostscript for PDF (optional but recommended):
         - Linux/macOS: ghostscript package
         - Windows: gswin64c
+
+Developed by Mohammad Ali Bazzazi
+https://mohammadalibazzazi.ir
 """
 
 import os
@@ -228,8 +231,11 @@ def compress_pdf(src: str, dst: str, max_bytes: int) -> tuple[bool, str]:
 
 # ----------------------------- Main Execution -----------------------------
 def main():
+    # Modern developer branding header
     print("=" * 60)
-    print("  Media Compressor (Images and PDFs)")
+    print("  🚀 Media Compressor  v2.0")
+    print("  Developed by Mohammad Ali Bazzazi")
+    print("  https://mohammadalibazzazi.ir")
     print("=" * 60)
 
     # Check Pillow
@@ -309,6 +315,10 @@ def main():
     print("-" * 60)
     print(f"Done. Below limit: {stats['ok']} | Above limit: {stats['over']} | Copied/Skipped: {stats['skip']}")
     print(f"Outputs are in the '{OUTPUT_DIR}' folder.")
+    print("=" * 60)
+    print("  Thanks for using Media Compressor!")
+    print("  © 2026 Mohammad Ali Bazzazi")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
